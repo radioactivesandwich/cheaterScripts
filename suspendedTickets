@@ -1,7 +1,7 @@
 function blankUsers (number) {
 var arrayLength;
 var ids = [];
-var url = "https://domain.zendesk.com/api/v2/search.json?page=" + number + "&query=type%3Auser+role%3Aagent";
+var url = "https://domain.zendesk.com/api/v2/suspended_tickets.json?page=" + number;
 var xhr = new XMLHttpRequest();
 xhr.open("GET", url, true);
 
